@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>innovation challenge</title>
+<title>personnal site</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -8,186 +8,104 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("cover.jpg");
-  min-height: 120%;
-}
-
 </style>
-<body>
-  <script>
-    alert( 'Hello, world!' );
-  </script>
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar"><a href="https://elbichon.github.io/"><img src="logo2.png" width="50" height="50"></a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i>TEAM</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
     </a>
+    <img src="images/0.jpeg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">Template by W3.CSS</p>
   </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <div class="w3-bar-block">
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+  </div>
+  <div class="w3-panel w3-large">
+    <a href="https://www.linkedin.com/in/jean-edouard-reuglewicz-0747628a/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
 </nav>
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Local Knowledge Integration</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Local Knowledge Integration</span><br>
-    <span class="w3-large">Stop wasting valuable time by communicating without making the impact you want.</span></br>
-    <span class="w3-large">Do not stay up all night to get L.O.K.I</span>
-  </div> 
-</header>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- About Section -->
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
 
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE SOLUTION</h3>
-  <p class="w3-center w3-large">Key features of our product</p>
-  <div class="w3-row-padding  w3-grayscale-min">
-    <div class="w3-col m6">
-      <h3>Our offer</h3>
-      <p><li>As a teacher or a facilitator, the way you convey your message is as important if not more important than the carried message itself.</br>
-      To make sure that you are being understood, you must correlate your posture and non verbal communication to your speech.
-      You should also adapt to the reaction of your audience to make sure to reach your teaching goals.</li></p>
-      <p><li>Using computer vision, data extraction and data aggregation, the solution extracts features not only from your audience 
-     (gender, age bucket, diplayed emotion...) but also from the speaker, speech to text, tone, posture, emotion...
-      and correlate them in relevant visualizations providing real time insights.</li></p>
-      <p><li>This solution allows you to improve your presentation skills by providing real time audience feedback but also providing
-post presentation analysis and enabling you to make the impact you want.</li></p>
-    <p><li>To know more about the project and help us, visit this<a href="https://innovationchallenge.cisco.com/itonics_idea/5562/details"> link.</a></li></p>
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="images/0.jpeg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
     </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="https://raw.githubusercontent.com/elBichon/Local_Knowledge_Integration/master/test.png" alt="Buildings" width="700" height="394">
     </div>
+  </header>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>Engineer passionate about technology and their application, doing his part in the machine uprising</p>
+    <hr>
   </div>
-</div>
 
-<!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones who made the magic possible</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/gia.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>Giacomo Perini</h3>
-          <p class="w3-opacity">CSAP ASR ITALY</p>
-          <p>Customer Experience Savvy, with a background in Marketing and Digital Advertisement.</p>
-        </div>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/text.png" alt="text_classifier" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>
+        <p><a href="https://medium.com/analytics-vidhya/how-i-learned-to-stop-worry-and-trust-the-script-f428101ee167">Automatic NLP classifier</b></p></a>
+<p>How I learned to stop worrying and trust the script</p>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="cam.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Camillio Dall Oglio</h3>
-          <p class="w3-opacity">CSAP ASR ITALY</p>
-          <p>Passionate about aligning People, Processes and Technologies to drive digital transformation.</p>
-        </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/automl.jpeg" alt="automl" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+         <p><a href="https://medium.com/@reuglewiczjeanedouard/how-i-learned-to-stop-worry-and-let-the-script-do-the-heavy-work-20d93d66af5a"><b>My take at AutoML</b></p></a>
+        <p>How I learned to let the script do the heavy work</p>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="ida.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Ida Vandecrantz</h3>
-          <p class="w3-opacity">CSAP ASE DENMARK</p>
-          <p>Background in photonics engineering, with an interest in how technology can solve everyday challenges.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="mat.jpg" alt="Dan" style="width:100%">
-        <div class="w3-container">
-          <h3>Mathias Cronjager</h3>
-          <p class="w3-opacity">CSAP ASE DENMARK</p>
-          <p>Studied mathematics in Berlin; worked on computational statistics and evolution in Oxford.</p>
-        </div>
-      </div>
-    </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="jedouard.jpg" alt="Dan" style="width:100%">
-        <div class="w3-container">
-          <h3>Jean-Edouard Reuglewicz</h3>
-          <p class="w3-opacity">CSAP ASE FRANCE</p>
-          <p>Just a guy doing his part in the AI overtaking.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="you.jpg" alt="Dan" style="width:100%">
-        <div class="w3-container">
-          <h3>Who Next ?</h3>
-          <p class="w3-opacity">We welcome your input and your feedback</p>
-          <p>Do not hesitate to reach out...</p>
-        </div>
+    <div class="w3-third w3-container">
+      <img src="images/pokemon.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b><a href="https://medium.com/@reuglewiczjeanedouard/gotta-compute-them-all-e90ae9e8668b">Gotta compute them all</b></p></a>
+        <p>How I learned to play pokemon the right way</p>
       </div>
     </div>
   </div>
+  
+
+  
+  <div class="w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+    <p>
+      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button>
+    </p>
+
 </div>
 
+<!-- End page content -->
+</div>
 
-
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="https://innovationchallenge.cisco.com/itonics_idea/5562/details" class="w3-button w3-light-grey">Link to the project</a>
-</footer>
- 
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
+// Script to open and close sidebar
 function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
 }
-
-// Close the sidebar with the close button
+ 
 function w3_close() {
-    mySidebar.style.display = "none";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
 }
 </script>
 
 </body>
 </html>
-
