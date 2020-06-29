@@ -28,148 +28,221 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="images/0.jpeg" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>PORTFOLIO</b></h4>
-    <p class="w3-text-grey">Template by W3.CSS</p>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-   <!-- <a href="#curriculum" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CURRICULUM</a> -->
-  </div>
-  <div class="w3-panel w3-large">
-    <a href="https://www.linkedin.com/in/jean-edouard-reuglewicz-0747628a/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://github.com/elBichon"><i class="fa fa-github w3-hover-opacity"></i></a>
-  </div>
-</nav>
+	<!-- Sidebar/menu -->
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+		<div class="w3-container">
+			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+				<i class="fa fa-remove"></i>
+			</a>
+			<img src="images/0.jpeg" style="width:45%;" class="w3-round"><br><br>
+			<h4><b>PORTFOLIO</b></h4>
+			<p class="w3-text-grey">Template by W3.CSS</p>
+		</div>
+		<div class="w3-bar-block">
+			<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-green"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+			<a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-green"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+	<!-- <a href="#curriculum" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CURRICULUM</a> -->
+		</div>
+		<div class="w3-panel w3-large">
+			<a href="https://www.linkedin.com/in/jean-edouard-reuglewicz-0747628a/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+			<a href="https://github.com/elBichon"><i class="fa fa-github w3-hover-opacity"></i></a>
+		</div>
+	</nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+	<div class="w3-main" style="margin-left:300px">
+<!-- Header -->
+	<header id="about">
+		<a href="#"><img src="images/0.jpeg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+		<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+		<div class="w3-container">
+			<h1><b>About Me</b></h1>
+			<div class="w3-section w3-bottombar w3-padding-16">
+				<h2>REUGLEWICZ Jean-Edouard</h2>
+					<p>Engineer passionate about technology and their application, doing his part in the machine uprising</p>
+			</div>
+		</div>
+	</header>
 
-  <!-- Header -->
-  <header id="about">
-    <a href="#"><img src="images/0.jpeg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h1><b>About Me</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-	    <h1>REUGLEWICZ Jean-Edouard</h1>
-	<p>Engineer passionate about technology and their application, doing his part in the machine uprising</p>
-    </div>
-    </div>
-  </header>
+	<div class="w3-container w3-padding-large" style="margin-bottom:32px" id="portfolio">
+		<h4><b>My Portfolio</b></h4>
+		<p>Some of my stuff and experimentations I have been doing in the fieds of AI, scripting and automation</p>
+		<hr>
+	</div>
 
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="portfolio">
-    <h4><b>My Portfolio</b></h4>
-    <p>Some of my stuff</p>
-    <hr>
-  </div>
-
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/text.png" alt="text_classifier" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>
-        <p><a href="https://medium.com/analytics-vidhya/how-i-learned-to-stop-worry-and-trust-the-script-f428101ee167">Automatic NLP classifier</b></p></a>
-<p>How I learned to stop worrying and trust the script</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/automl.jpeg" alt="automl" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-         <p><a href="https://medium.com/@reuglewiczjeanedouard/how-i-learned-to-stop-worry-and-let-the-script-do-the-heavy-work-20d93d66af5a"><b>My take at AutoML</b></p></a>
-        <p>How I learned to let the script do the heavy work</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="images/pokemon.png" alt="pokemon" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b><a href="https://medium.com/@reuglewiczjeanedouard/gotta-compute-them-all-e90ae9e8668b">Gotta compute them all</b></p></a>
-        <p>How I learned to play pokemon the right way</p>
-      </div>
-    </div>
-  </div>
-	
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/deepfake.jpg" alt="deepfake" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>
-        <p><a href="https://medium.com/@reuglewiczjeanedouard/50-layers-of-autoencoders-part-1-7fe63fec9cd4">50 layers of autoencoders P1</b></p></a>
-<p>Or how to detect deepfake with autoencoders</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/python_ws.jpeg" alt="python_wall_street" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>
-        <p><a href="https://medium.com/@reuglewiczjeanedouard/the-python-of-wall-street-part-1-d47962fd6beb">The python of Wall Street P1</b></p></a>
-<p>Or how how to create a trader bot</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/python_ws.jpeg" alt="python_wall_street" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>
-        <p><a href="https://medium.com/@reuglewiczjeanedouard/the-python-of-wall-street-part-2-f5e8c41f7dff">The python of Wall Street P2</b></p></a>
-<p>Or how how to create an ETL</p>
-      </div>
-    </div>
-  </div>
-	
-<!-- Third Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/python_ws.jpeg" alt="python_wall_street" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>
-        <p><a href="https://medium.com/@reuglewiczjeanedouard/the-python-of-wall-street-part-3-3e06dcd2811a">The python of Wall Street P3</b></p></a>
-	<p>Or how how to train a model</p>
-      </div>
-      </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/python_ws.jpeg" alt="python_wall_street" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>
-        <p><a href="https://medium.com/@reuglewiczjeanedouard/the-python-of-wall-street-part-4-a08235f13d1e">The python of Wall Street P4</b></p></a>
-	<p>Or sorry but you have to train it again pal'</p>
-      </div>
-      </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/python_ws.jpeg" alt="python_wall_street" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>
-        <p><a href="https://medium.com/@reuglewiczjeanedouard/the-python-of-wall-street-part-5-1d6de3fcd9a6">The python of Wall Street P5</b></p></a>
-	<p>Or Make APIs great again</p>
-      </div>
-      </div>
-  </div>
-  
- <!-- <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="curriculum">
-    <h4><b>My Curriculum</b></h4>
-    <p>
-      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-download w3-margin-right"></i>Download Resume
-      </button>
-    </p>
-    <hr>
-  </div>-->
-  
-  <div class="w3-center w3-padding-24"></div>
-
-<!-- End page content -->
+<!-- Grid -->
+<div class="w3-row">
+	<div class="w3-col l8 s12">
+		<div class="w3-card-4 w3-margin w3-white">
+		<img src="images/text.png" alt="text_classifier" style="width:100%">
+			<div class="w3-margin">
+				<div class="w3-container w3-padding">
+				</div>
+				<div class="w3-container w3-white">
+ 					<p><span class="w3-tag w3-light-green w3-small w3-margin-bottom">Machine Learning</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Wikipedia</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">NLP</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Beautiful Soup</span></p>
+				</div>
+			</div>
+			<div class="w3-container">
+				<h3><b>Automatic NLP classifier</b></h3>
+					<h5>How I learned to stop worry and let the script do the heavy work, <span class="w3-opacity">December 13, 2019</span></h5>
+			</div>
+			<div class="w3-container">
+				<p>
+					<ul>
+						<li><a href="https://github.com/elBichon/blue_orchid.github.io"><b>Github</b></a></li>
+						<li><a href="https://github.com/elBichon/blue_orchid.github.io"><b>Documentation</b></a></li>
+					</ul>				
+				</p>
+				<div class="w3-row">
+					<div class="w3-col m8 s12">
+						<p><a href="https://medium.com/analytics-vidhya/how-i-learned-to-stop-worry-and-trust-the-script-f428101ee167"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></a></button></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+<hr>
+<!-- Grid -->
+<div class="w3-row">
+	<div class="w3-col l8 s12">
+		<div class="w3-card-4 w3-margin w3-white">
+		<img src="images/automl.jpeg" alt="automl" style="width:100%">
+			<div class="w3-margin">
+				<div class="w3-container w3-padding">
+				</div>
+				<div class="w3-container w3-white">
+ 					<p><span class="w3-tag w3-light-green w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">AutoML</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Features Selection</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Features ENgineering</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Evolutionnary algorithm</span></p>
+				</div>
+			</div>
+			<div class="w3-container">
+				<h3><b>My Take at AutoML</b>, <span class="w3-opacity">March 15, 2020</span></h3>
+					<h5>How I learned to stop worry and let the script do the heavy work</h5>
+			</div>
+			<div class="w3-container">
+				<p>
+					<ul>
+						<li><a href="https://github.com/elBichon/easyML"><b>Github</b></a></li>
+						<li><a href="https://github.com/elBichon/easyML"><b>Documentation</b></a></li>
+					</ul>				
+				</p>
+				<p>Machine learning is great but it is also a difficult and somewhat cryptic task and can be hard to democratize. On the other hand, even taking into account the no free lunch theorem, there are some techniques and process to automate the creation of optimized models. This article presents easyML a script for automation of features selection, features engineering and training of a model.</p>
+				<div class="w3-row">
+					<div class="w3-col m8 s12">
+						<p><a href="https://medium.com/@reuglewiczjeanedouard/how-i-learned-to-stop-worry-and-let-the-script-do-the-heavy-work-20d93d66af5a"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></a></button></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+<!-- Grid -->
+<div class="w3-row">
+	<div class="w3-col l8 s12">
+		<div class="w3-card-4 w3-margin w3-white">
+		<img src="images/pokemon.png" alt="pokemon" style="width:100%">
+			<div class="w3-margin">
+				<div class="w3-container w3-padding">
+				</div>
+				<div class="w3-container w3-white">
+ 					<p><span class="w3-tag w3-light-green w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Data analysis</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Data vizualisation</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Geek</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom"></span></p>
+				</div>
+			</div>
+			<div class="w3-container">
+				<h3><b>Gotta compute them all</b>, <span class="w3-opacity">May 12, 2020</span></h3>
+					<h5>Or how to play pokemon the right way</h5>
+			</div>
+			<div class="w3-container">
+				<p>
+					<ul>
+						<li><a href="https://www.kaggle.com/tatatatata/pokemon"><b>Kaggle</b></a></li>
+					</ul>				
+				</p>
+				<p>Recently, a fellow data enthusiast, https://towardsdatascience.com/@anis.ayari shared a tutorial on data visualization using the kaggle pokemon dataset. This made me wonder if there is a way to beat the game using some basic data analysis. I’ll present an analysis of the dataset for the version red and blue, which is the best starter and whether or not Ash actually stood a chance.</p>
+				<div class="w3-row">
+					<div class="w3-col m8 s12">
+						<p><a href="https://medium.com/@reuglewiczjeanedouard/gotta-compute-them-all-e90ae9e8668b"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></a></button></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+<!-- Grid -->
+<div class="w3-row">
+	<div class="w3-col l8 s12">
+		<div class="w3-card-4 w3-margin w3-white">
+		<img src="images/deepfake.jpg" alt="deepfake" style="width:100%">
+			<div class="w3-margin">
+				<div class="w3-container w3-padding">
+				</div>
+				<div class="w3-container w3-white">
+ 					<p><span class="w3-tag w3-light-green w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Deepfakes</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Autoencoder</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Programming</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Image Processing</span></p>
+				</div>
+			</div>
+			<div class="w3-container">
+				<h3><b>50 layers of autoencoder P1</b>, <span class="w3-opacity">May 25, 2020</span></h3>
+					<h5>Or how to detect deepfake with autoencoders</h5>
+			</div>
+			<div class="w3-container">
+				<p>
+					<ul>
+						<li><a href="https://www.kaggle.com/tatatatata/deepfake"><b>Kaggle</b></a></li>
+					</ul>				
+				</p>
+				<p>Deepfake consist in switching ones face in a video or picture for someones’ else face in the same picture in the best way possible.
+Advanced techniques based on deep learning and specifically auto-encoders along with the ease of access to computing power and image data enable the creation of very powerful models resulting in fake pictures that are hard to discriminate from real pictures.
+In this article, I’ll expose some of my experiments based on autoencoder for deepfake detection.</p>
+				<div class="w3-row">
+					<div class="w3-col m8 s12">
+						<p><a href="https://medium.com/@reuglewiczjeanedouard/50-layers-of-autoencoders-part-1-7fe63fec9cd4"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></a></button></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+<!-- Grid -->
+<div class="w3-row">
+	<div class="w3-col l8 s12">
+		<div class="w3-card-4 w3-margin w3-white">
+		<img src="images/python_ws.jpeg" alt="finance" style="width:100%">
+			<div class="w3-margin">
+				<div class="w3-container w3-padding">
+				</div>
+				<div class="w3-container w3-white">
+ 					<p><span class="w3-tag w3-light-green w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Flask</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">API</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Finance</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Data Analysis</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">SQL</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">ETL</span> <span class="w3-tag w3-light-green w3-small w3-margin-bottom">Data MAnagement</span></p>
+				</div>
+			</div>
+			<div class="w3-container">
+				<h3><b>The python of Wall Street</b>, <span class="w3-opacity">Started 1 june, 2020</span></h3>
+					<h5>Or how to beat the market</h5>
+			</div>
+			<div class="w3-container">
+				<p>
+					<ul>
+						<li><a href="https://medium.com/@reuglewiczjeanedouard/the-python-of-wall-street-part-1-d47962fd6beb">Or how how to create a trader bot</a></li>
+						<li><a href="https://medium.com/@reuglewiczjeanedouard/the-pyhon-of-wall-street-part-2-f5e8c41f7dff">Or how how to create an ETL</a></li>
+						<li><a href="https://medium.com/@reuglewiczjeanedouard/the-python-of-wall-street-part-3-3e06dcd2811a">Or how how to train a model</a></li>
+						<li><a href="https://medium.com/@reuglewiczjeanedouard/the-python-of-wall-street-part-3-3e06dcd2811a">Or how how to train a model</a></li>
+						<li><a href="https://medium.com/@reuglewiczjeanedouard/the-python-of-wall-street-part-4-a08235f13d1e">Or sorry you need to train it again</a></li>
+						<li><a href="https://medium.com/@reuglewiczjeanedouard/the-python-of-wall-street-part-5-1d6de3fcd9a6">Or make APIs great again</a></li>
+					</ul>				
+				</p>
+				<p>This project began as a pet project to get started with stock analysis, trend estimating and playing with api. Later, it became something bigger and enabled me to experiment with diferent technologies like mysql, ETL creation or api creation. The end goal is to create a fully automated pipeline leveraging microservices and integrating automated deploiement and later reinforcement learning to fully automate the trading process</p>
+				<div class="w3-row">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+
 
 <script>
 // Script to open and close sidebar
