@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stye.css">	
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
@@ -67,6 +68,41 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 		</div>
 	</header>
 
+
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="https://comic-nest.herokuapp.com/static/images/logo2.png" style="width:100%">
+	  <div class="text"><ul><li><a href="https://comic-nest.herokuapp.com/">Comic Search</a></li><li>Flask</li><li>Heroku</li><<li>Text Processing</li></ul></div>
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="https://online-ml.herokuapp.com/static/images/logo.png" style="width:100%">
+	  <div class="text"><ul><li><a href="https://online-ml.herokuapp.com/">Crush Dad Data</a></li><li>Flask</li><li>Heroku</li><<li>Machine Learning</li></ul></div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="https://elbichon.github.io/images/pokemon.png" style="width:100%">
+	  <div class="text"><ul><li><a href="https://pick-pokemon-api.herokuapp.com/query-pokemon?pokemon_number=100&">Pokemon API</a></li><li>Flask</li><li>Heroku</li><<li>API Creation</li></ul></div>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+		
+		
+		
+		
 	<div class="w3-container w3-padding-large" style="margin-bottom:32px" id="portfolio">
 		<h4><b>My Portfolio</b></h4>
 		<p>Some of my stuff and experimentations I have been doing in the fieds of AI, scripting and automation</p>
@@ -333,6 +369,35 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
+}
+	
+	
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
 </script>
 
