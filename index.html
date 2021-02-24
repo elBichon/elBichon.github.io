@@ -21,6 +21,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="stye.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -67,6 +68,86 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 		</div>
 	</header>
 
+		
+		
+
+<div class="container">
+	<div class="mySlides fade">
+		<div class="numbertext">1 / 3</div>
+		<div class="text-block">
+			<h4>Nature</h4>
+				<p>What a beautiful sunrise</p>
+		</div>
+			<img src="img_snow_wide.jpg" style="width:100%">
+	</div>
+</div>
+
+<div class="container">
+	<div class="mySlides fade">
+		<div class="numbertext">2 / 3</div>
+		<div class="text-block">
+			<ul>
+				<li>What a beautiful sunrise</li>
+            </ul>
+		</div>
+			<img src="img_snow_wide.jpg" style="width:100%">
+	</div>
+</div>
+
+<div class="container">
+	<div class="mySlides fade">
+		<div class="numbertext">3 / 3</div>
+		<div class="text-block">
+			<h4>Nature</h4>
+				<p>What a beautiful sunrise</p>
+		</div>
+			<img src="img_snow_wide.jpg" style="width:100%">
+	</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>	
+		
+		
+	
 	<div class="w3-container w3-padding-large" style="margin-bottom:32px" id="portfolio">
 		<h4><b>My Portfolio</b></h4>
 		<p>Some of my stuff and experimentations I have been doing in the fieds of AI, scripting and automation</p>
